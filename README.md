@@ -31,6 +31,14 @@ source ~/face_app_venv/bin/activate
 After activating virtual environment, the required libraries can be installed using:
 pip install mediapipe opencv-python numpy pillow streamlit picamera2
 
+### Anonymization Method Used 
+In the developed application Gaussian Blue and Pixelation method were used in both images and real time camera frames. 
+When the subject face is near the camera or if the images quality is good the application work better. And the application work well with JPG, JPEG and PNG images as well as real time camera frames. 
+
+During testing, it was observed that the application had difficulty detecting faces when the face was covered or partially blocked. It also had difficulty detecting faces that were very far from the camera. In these situations, the application could not reliably detect and anonymize the faces in real-time camera frames or uploaded images.
+
+
+
 
 
 
