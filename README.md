@@ -37,8 +37,15 @@ When the subject face is near the camera or if the images quality is good the ap
 
 During testing, it was observed that the application had difficulty detecting faces when the face was covered or partially blocked. It also had difficulty detecting faces that were very far from the camera. In these situations, the application could not reliably detect and anonymize the faces in real-time camera frames or uploaded images.
 
+### Multiple Face and No Face Handling
+This application can handle multiple faces and anonymize them in uploaded images or from the camera frames. Each detected face is processed separately. If the uploaded images or camera frame does not contain faces, the application showed "no face detected" and, no anonymization is applie
+The basic idea behind anonymization process is that the model detect each face in the images or camera frame and provides the coordinates of each detected face. These coordinates are then used for further blurring or pixelation using OpenCV.  
 
+Own images and live camera frames were used for testing. The results of the images were not published before anonymization. Any unknown sources data has not been used while testing this application.
+However, anonymization is not guaranteed to provide complete privacy, especially when face is not detected correctly.  
 
+### Sources Or Documents Used 
+MediaPipe offical document were used to understand the concept of BlazeFace-based model. All the libraries mentioned above were used in this project. For testing purposes, my own test images and real-time camera frames were used to evaluate the face detection and anonymization process. 
 
 
 
